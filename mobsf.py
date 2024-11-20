@@ -20,8 +20,6 @@ def main():
 
     pack = Packaging(config.AES_KEY, os.path.basename(config.APK_PATH))
     apks = pack.process(config.APK_PATH)
-    # print(apks)
-    # apks=[config.APK_PATH]
     emulate.emulator_ready()
     
     
